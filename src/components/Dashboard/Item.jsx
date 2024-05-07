@@ -7,7 +7,7 @@ const Item = ({ data }) => {
   const handleDelete = async (task) => {
     console.log(task);
     const res = await axios.delete(
-      `http://localhost:5000/deletetask/${token}`,
+      `https://dashboard-backend-1fmq.onrender.com/deletetask/${token}`,
       { data: { id: task } }
     );
     console.log(res.data);
