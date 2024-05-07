@@ -1,0 +1,163 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.taskContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: scroll;
+
+  width: 30%;
+  padding: 10px;
+  height: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.listItem {
+  padding: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 300px;
+  gap: 12px;
+  height: 144px;
+  background-color: #f9f9f9;
+  border: 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  top: 0%;
+}
+
+.listHeader > p {
+  font-size: 20px;
+}
+
+.itemName {
+  font-size: 18px;
+}
+
+.itemBody {
+  font-size: 14px;
+}
+
+.ItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.itemLabel > small {
+  font-size: 12px;
+  background-color: gray;
+  padding: 3px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grp1,
+.grp2 {
+  margin: 4px;
+  display: flex;
+  gap: 3px;
+}
+
+.grp1 > button,
+.grp2 > button {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: #0056b3;
+}
