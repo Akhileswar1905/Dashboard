@@ -20,7 +20,7 @@ const Dashboard = () => {
   const handleAddTask = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/addtodo/${state}`,
+        `https://dashboard-backend-1fmq.onrender.com/addtodo/${state}`,
         newTask
       );
       // console.log(res.data);
@@ -41,7 +41,9 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/${state}`);
+        const res = await axios.get(
+          `https://dashboard-backend-1fmq.onrender.com/${state}`
+        );
         // console.log(res.data);
         setTasks(res.data);
       } catch (error) {
